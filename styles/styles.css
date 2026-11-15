@@ -1,4 +1,24 @@
 /* Base Styles */
+/*Header and Navigation*/
+header {
+    background-color: #1f3a5f;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
 border {box-sizing:0 0 border-box;
 border: 1px solid SteelBlue;
 padding: 2px;
