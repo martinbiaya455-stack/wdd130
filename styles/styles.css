@@ -12,27 +12,10 @@ body {
 }
 
 /* Header and nav */
-header {
-    background-color: #1f3a5f;
-    padding: 1rem;
-}
-
-nav {
-    display: flex;
-    gap: 1.5rem;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Side-by-side layout */
+border {box-sizing:0 0 border-box;
+border: 1px solid SteelBlue;
+padding: 2px;
+box-shadow: 0 0 30px gray;}
 
 main {
   max-width: 840px;
@@ -59,18 +42,9 @@ main img {
 }
 
 p { padding: 0;}
-
 /* Footer */
 footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #1f3a5f;
-    color: #fff;
-}
-
-/* Stack on small screens */
-@media (max-width: 700px) {
-    .content {
-        grid-template-columns: 1fr;
-    }
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
 }
