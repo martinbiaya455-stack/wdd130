@@ -23,7 +23,8 @@ nav a:hover {
 main {
   max-width: 840px;
 }
-border{border: 1px solid steelblue;
+border{  
+border: 1px solid steelblue;
 padding: 2px;
 box-shadow: 0 0 30px gray;
 }
@@ -35,7 +36,7 @@ p {
 aside {
   width: 20rem;
   margin: 1rem;
-  border: 1px solid rgb(0 0 0 0.2); /* 1️⃣ */
+  border: 1px solid rgb(0 0 0 /0.2); /* 1️⃣ */
   padding: 1rem;
   background-color: #eee;
   color: #333;
