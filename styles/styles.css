@@ -19,10 +19,6 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
-border {box-sizing:0 0 border-box;
-border: 1px solid SteelBlue;
-padding: 2px;
-box-shadow: 0 0 30px gray;}
 
 main {
   max-width: 840px;
