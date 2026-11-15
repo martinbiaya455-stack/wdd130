@@ -20,20 +20,21 @@ nav a:hover {
     text-decoration: underline;
 }
 
-main {
+nav a:main {
   max-width: 840px;
 }
-border{  
+
+nav a:border {  
 border: 1px solid steelblue;
 padding: 2px;
 box-shadow: 0 0 30px gray;
 }
 
-p {
+nav a:p {
     padding: 0;
 }
 /* Aside */
-aside {
+nav a:aside {
   width: 20rem;
   margin: 1rem;
   border: 1px solid rgb(0 0 0 /0.2); /* 1️⃣ */
@@ -43,12 +44,12 @@ aside {
   text-align: center;
 }
 /* Images */
-aside img {
+nav a:aside img {
   width: 200px;
   height: auto;
 }
 /* Footer */
-footer {
+nav a:footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
