@@ -37,7 +37,7 @@ nav a:p {
 nav a:aside {
   width: 20rem;
   margin: 1rem;
-  border: 1px solid rgb(0 0 0 /0.2); /* 1️⃣ */
+  border: 1px solid #00000033; /* 1️⃣ */
   padding: 1rem;
   background-color: #eee;
   color: #333;
