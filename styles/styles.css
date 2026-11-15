@@ -21,7 +21,10 @@ nav a:hover {
 h1 {
     color: #1f3a5f;
 }
-
+    
+main {
+    max-width: 840px;
+}
 main img {
     max-width: 840px;
     width: 200px;
