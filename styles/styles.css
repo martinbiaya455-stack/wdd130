@@ -21,10 +21,8 @@ nav a:hover {
 }
 
 main {
-  max-width: 840px;
-}
-
-border {  
+max-width: 840px;
+margin: 1rem;  
 border: 1px solid steelblue;
 padding: 2px;
 box-shadow: 0 0 30px gray;
