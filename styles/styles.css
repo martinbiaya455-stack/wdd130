@@ -1,20 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Basics */
 border {box-sizing:0 0 border-box;
 border: 1px solid SteelBlue;
 padding: 2px;
@@ -33,7 +17,7 @@ aside {
   color: #333;
   text-align: center;
 }
-
+/* Images */
 aside img {
   width: 200px;
   height: auto;
@@ -45,7 +29,7 @@ main img {
 }
 
 p { padding: 0;}
-
+/* Footer */
 footer {
   margin-top: 15px;
   border-top: 1px solid #000;
