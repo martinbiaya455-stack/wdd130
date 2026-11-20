@@ -11,12 +11,6 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Background Color */
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -35,6 +29,12 @@ footer {
     margin: 0 auto;
 }
 
+/* Background Color */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -43,8 +43,7 @@ h2 {
 
 nav,
 p,
-section,
-article {
+section {
     margin: 16px;
     padding: 8px;
 }
@@ -53,6 +52,7 @@ article {
     text-decoration: none;
 }
 
+/* Hero overlay */
 .hero {
     position: relative;
 }
@@ -63,7 +63,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -72,10 +72,21 @@ h1 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
-    /* white text – make sure there is enough contrast with the background-color */
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 16px;
+    padding: 8px;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 .hero article img {
     float: right;
     width: 125px;
+    margin-left: 8px;
 }
