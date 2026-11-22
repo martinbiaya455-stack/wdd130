@@ -1,9 +1,11 @@
+/* Wild Water Rafting - rafting.css */
+
 :root {
   --primary-color: #055a05;   /* forest green */
   --secondary-color: #f4a261; /* warm sand */
   --accent1-color: #264653;   /* dark slate blue */
   --accent2-color: #e9c46a;   /* light golden yellow */
-  --heading-font: "Times New Roman", "Georgia", serif;
+  --heading-font: "Times New Roman", Georgia, serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
 
@@ -43,8 +45,8 @@ header {
 }
 
 header img {
-  background-color: #fff;
-  border-radius: 8px;
+  height: 64px;
+  width: auto;
   margin: 8px 16px;
 }
 
@@ -86,10 +88,10 @@ h1 {
   bottom: 20px;
   left: 20px;
   width: 60%;
-  background-color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  background-color: #fff;
   border: 3px solid var(--secondary-color);
   border-radius: 8px;
-  margin: 0;
   overflow: auto;
 }
 
@@ -122,5 +124,7 @@ footer {
 }
 
 .socialmedia img {
+  width: 32px;
+  height: 32px;
   margin: 0 6px;
 }
