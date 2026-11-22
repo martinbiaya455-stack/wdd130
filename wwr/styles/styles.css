@@ -1,12 +1,12 @@
 /* Wild Water Rafting - rafting.css */
 
 :root {
-  --primary-color: #055a05;   /* forest green */
-  --secondary-color: #f4a261; /* warm sand */
-  --accent1-color: #264653;   /* dark slate blue */
-  --accent2-color: #e9c46a;   /* light golden yellow */
-  --heading-font: "Times New Roman", Georgia, serif;
-  --body-font: Arial, Helvetica, sans-serif;
+  --primary-color: #1c3263;   /* deep navy used for banners and overlays */
+  --secondary-color: #ffffff; /* white text on dark backgrounds */
+  --accent1-color: #111111;   /* body text */
+  --accent2-color: #d9d9d9;   /* light gray lines and borders */
+  --heading-font: "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --body-font: Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -18,47 +18,28 @@
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
+  line-height: 1.2;
 }
 
 header, main, footer {
-  width: 840px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
-}
-
-/* Header */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
-}
-
+/* Header: logo with a plain list of links under it */
 header img {
-  height: 64px;
-  width: auto;
-  margin: 8px 16px;
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 10px 16px 0;
 }
 
-header nav a {
-  color: var(--accent2-color);
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 8px;
+header nav {
+  margin: 4px 0 16px;
 }
 
-header nav a:hover {
-  text-decoration: underline;
+header nav ul {
+  padding-left: 16px;
 }
 
 /* Hero with overlays */
@@ -74,49 +55,67 @@ header nav a:hover {
 
 h1 {
   position: absolute;
-  top: 20px;
+  top: 50px;
   width: 100%;
-  padding: 16px;
+  padding: 8px 16px;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff;
+  font-family: var(--heading-font);
+  font-size: 2.8rem;
+  font-weight: bold;
+  background-color: rgba(28, 50, 99, 0.75);
+  color: var(--secondary-color);
 }
 
 .hero article {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  width: 60%;
-  margin: 0;
-  background-color: #fff;
-  border: 3px solid var(--secondary-color);
-  border-radius: 8px;
-  overflow: auto;
+  left: 30px;
+  right: 30px;
+  bottom: 45px;
+  min-height: 140px;
+  padding: 16px;
+  background-color: rgba(28, 50, 99, 0.85);
+  border: 1px solid var(--accent2-color);
+  color: var(--secondary-color);
+  font-size: 1.2rem;
 }
 
 .hero article img {
   float: right;
-  width: 125px;
-  margin: 0 0 8px 12px;
-  border: 3px solid var(--accent2-color);
-  border-radius: 8px;
+  width: 150px;
+  height: auto;
+  margin: 0 0 0 16px;
+  border: 2px solid var(--secondary-color);
 }
 
-/* Sections */
+/* Section banners */
 section {
-  border-bottom: 2px solid var(--accent2-color);
+  margin-top: 36px;
 }
 
-section h2 {
-  margin-bottom: 8px;
+h2 {
+  padding: 18px 16px;
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: 1.7rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+section p {
+  padding: 16px;
+  line-height: 1.2;
 }
 
 /* Footer */
 footer {
-  background-color: var(--accent1-color);
-  color: var(--accent2-color);
-  text-align: center;
+  margin-top: 32px;
+  padding: 16px;
+  border-top: 1px solid var(--accent2-color);
+}
+
+footer p {
+  margin-bottom: 4px;
 }
 
 .socialmedia a {
@@ -124,7 +123,21 @@ footer {
 }
 
 .socialmedia img {
-  width: 32px;
-  height: 32px;
-  margin: 0 6px;
+  width: 50px;
+  height: 50px;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    top: 10px;
+    font-size: 1.5rem;
+  }
+
+  .hero article {
+    position: static;
+    min-height: 0;
+    font-size: 1rem;
+  }
 }
