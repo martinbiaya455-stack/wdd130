@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #055a05; /* forest green */
-  --secondary-color: #f4a261; /* warm sand */
-  --accent1-color: #264653; /* dark slate blue */
-  --accent2-color: #e9c46a; /* light golden yellow */
-  --heading-font: "Times New Roman", "Georgia", serif;
+  --primary-color: #1b2f63;   /* deep navy */
+  --secondary-color: #3a5a9b; /* lighter navy */
+  --accent1-color: #14213d;   /* near-black blue */
+  --accent2-color: #ffffff;   /* white */
+  --heading-font: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
 
@@ -13,54 +13,113 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
 }
 
 header, main, footer {
-  width: 840px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+/* Header */
+header img {
+  display: block;
+  width: 160px;
+  height: auto;
+  margin: 10px 0 6px 16px;
 }
 
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+header nav ul {
+  padding-left: 40px;
+  margin-bottom: 16px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+header nav a {
+  color: #1a1abf;
 }
 
-/* Style div hero with background image and overlay */
+/* Hero with overlays */
 .hero {
   position: relative;
 }
 
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  h1 {
-  position: absolute;
-  top: 20px;
+  display: block;
   width: 100%;
-  padding: 16px;
+  height: auto;
+}
+
+h1 {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  padding: 12px;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff; /* white text – make sure there is enough contrast with the background-color */
+  font-family: var(--heading-font);
+  font-size: 2.6rem;
+  background-color: rgba(27, 47, 99, 0.85);
+  color: var(--accent2-color);
+}
+
+.hero article {
+  position: absolute;
+  bottom: 45px;
+  left: 30px;
+  right: 30px;
+  padding: 16px;
+  overflow: auto;
+  background-color: rgba(27, 47, 99, 0.82);
+  border: 1px solid var(--secondary-color);
+  color: var(--accent2-color);
+}
+
+.hero article p {
+  font-size: 1.15rem;
+  line-height: 1.35;
+  max-width: 85%;
 }
 
 .hero article img {
   float: right;
-  width: 125px;
+  width: 150px;
+  margin-left: 16px;
+  border: 3px solid var(--accent2-color);
+}
+
+/* Sections */
+section {
+  margin-top: 36px;
+}
+
+h2 {
+  padding: 18px;
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
+
+section p {
+  padding: 16px;
+  line-height: 1.4;
+}
+
+/* Footer */
+footer {
+  margin-top: 36px;
+  padding: 16px;
+  border-top: 1px solid #ccc;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia img {
+  width: 50px;
+  height: 50px;
+  margin: 8px 8px 0 8px;
 }
