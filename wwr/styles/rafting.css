@@ -3,6 +3,7 @@
   --secondary-color: #3a5a9b; /* lighter navy */
   --accent1-color: #14213d;   /* near-black blue */
   --accent2-color: #ffffff;   /* white */
+  --highlight-color: #e9c46a; /* golden yellow */
   --heading-font: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -23,21 +24,42 @@ header, main, footer {
   margin: 0 auto;
 }
 
-/* Header */
-header img {
-  display: block;
-  width: 160px;
-  height: auto;
-  margin: 10px 0 6px 16px;
+/* Header: grid for logo + nav, flex inside the nav */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 20px;
+  background-color: var(--primary-color);
 }
 
-header nav ul {
-  padding-left: 40px;
-  margin-bottom: 16px;
+header img {
+  display: block;
+  height: 70px;
+  width: auto;
+  background-color: var(--accent2-color);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px 24px;
 }
 
 header nav a {
-  color: #1a1abf;
+  color: var(--accent2-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 4px;
+  border-bottom: 3px solid transparent;
+}
+
+header nav a:hover,
+header nav a:focus-visible {
+  border-bottom-color: var(--highlight-color);
 }
 
 /* Hero with overlays */
@@ -65,25 +87,24 @@ h1 {
 
 .hero article {
   position: absolute;
-  bottom: 45px;
+  bottom: 30px;
   left: 30px;
   right: 30px;
   padding: 16px;
   overflow: auto;
-  background-color: rgba(27, 47, 99, 0.82);
+  background-color: rgba(27, 47, 99, 0.85);
   border: 1px solid var(--secondary-color);
   color: var(--accent2-color);
 }
 
 .hero article p {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   line-height: 1.35;
-  max-width: 85%;
 }
 
 .hero article img {
   float: right;
-  width: 150px;
+  width: 125px;
   margin-left: 16px;
   border: 3px solid var(--accent2-color);
 }
@@ -102,9 +123,42 @@ h2 {
   color: var(--accent2-color);
 }
 
-section p {
+/* History: heading bar, then text in two columns */
+.history p {
   padding: 16px;
-  line-height: 1.4;
+  line-height: 1.5;
+  column-count: 2;
+  column-gap: 32px;
+}
+
+/* Adventure: five figures across the section (grid) */
+.adventure {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.adventure h2 {
+  grid-column: 1 / -1;
+}
+
+figure {
+  border: 1px solid #c9d1e3;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+figcaption {
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: var(--primary-color);
 }
 
 /* Footer */
