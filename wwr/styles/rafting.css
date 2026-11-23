@@ -3,6 +3,7 @@
   --secondary-color: #f5f5f5; /* light gray (content boxes) */
   --accent1-color: #1f1b2e;   /* near-black text */
   --accent2-color: #ffffff;   /* white */
+  --overlay-color: #ffffffc7; /* white at about 78% opacity */
   --line-color: #4a4560;      /* box outlines */
   --heading-font: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   --body-font: Arial, Helvetica, sans-serif;
@@ -94,7 +95,7 @@ h1 {
   font-family: var(--body-font);
   font-size: 2rem;
   font-weight: normal;
-  background-color: rgba(255, 255, 255, 0.78);
+  background-color: var(--overlay-color);
   color: var(--accent1-color);
 }
 
