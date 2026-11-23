@@ -114,6 +114,12 @@ footer {
   border-top: 1px solid #ccc;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;  /* copyright left, icons right */
+  align-items: flex-end;           /* icons sit at the bottom */
+}
+
 .socialmedia a {
   text-decoration: none;
 }
