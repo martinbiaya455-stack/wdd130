@@ -123,3 +123,19 @@ footer {
   height: 50px;
   margin: 8px 8px 0 8px;
 }
+
+footer {
+  display: flex;
+  justify-content: space-between;  /* copyright left, icons right */
+  align-items: flex-end;           /* icons sit at the bottom */
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia img {
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+}
