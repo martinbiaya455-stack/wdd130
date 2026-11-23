@@ -112,15 +112,13 @@ h1 {
 .hero article p {
   font-size: 0.95rem;
   line-height: 1.35;
-  margin-right: 110px;
 }
 
 .hero article img {
-  position: absolute;
-  top: 16px;
-  right: 20px;
+  float: right;
   width: 80px;
   height: auto;
+  margin: 0 0 8px 16px;
 }
 
 /* ---------- Content boxes ---------- */
@@ -229,9 +227,6 @@ footer p {
     left: auto;
     right: auto;
     margin: 0;
-  }
-  .hero article p {
-    margin-right: 96px;
   }
   .history {
     grid-template-columns: 1fr;
